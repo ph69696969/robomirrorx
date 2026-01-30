@@ -27,8 +27,8 @@
 
     /* SECTIONS */
     section {
-      min-height: 60vh;
-      padding: 20px 18px;
+      min-height: 60vh; /* reduced from 65vh */
+      padding: 20px 18px; /* reduced padding */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -46,10 +46,10 @@
       top: 0;
       width: 100%;
       z-index: 100;
-      background: rgba(2, 6, 23, 0.95);
+      background: rgba(2,6,23,0.95);
       backdrop-filter: blur(8px);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-      border-top: 3px solid #F87C7E;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+		border-top: #F87C7E 
     }
 
     nav {
@@ -58,7 +58,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 20px;
+      padding: 12px 20px; /* reduced vertical padding */
     }
 
     nav h3 {
@@ -71,7 +71,7 @@
       color: #e5e7eb;
       text-decoration: none;
       font-size: 0.9rem;
-      margin-left: 14px;
+      margin-left: 14px; /* slightly smaller spacing */
       position: relative;
     }
 
@@ -91,7 +91,7 @@
     }
 
     .spacer {
-      height: 70px;
+      height: 70px; /* reduced from 80px */
     }
 
     /* HERO SECTION */
@@ -106,7 +106,7 @@
     }
 
     .hero p {
-      margin-top: 12px;
+      margin-top: 12px; /* reduced spacing */
       font-size: 1rem;
       opacity: 0.95;
       text-align: center;
@@ -114,16 +114,16 @@
 
     .image-row {
       display: flex;
-      gap: 18px;
+      gap: 18px; /* reduced gap */
       justify-content: center;
       flex-wrap: wrap;
-      margin-top: 18px;
+      margin-top: 18px; /* reduced spacing */
     }
 
     .image-row img {
-      max-width: 200px;
-      border-radius: 40px;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+      max-width: 200px; /* slightly smaller images */
+      border-radius: 14px;
+      box-shadow: 0 0 20px rgba(56,189,248,0.5);
       transition: 0.4s ease;
     }
 
@@ -133,18 +133,18 @@
 
     /* CARDS */
     .card {
-      background: rgba(15, 23, 42, 0.95);
-      padding: 22px;
+      background: rgba(15,23,42,0.95);
+      padding: 22px; /* reduced padding */
       border-radius: 18px;
-      box-shadow: 0 0 30px rgba(56, 189, 248, 0.18);
+      box-shadow: 0 0 30px rgba(56,189,248,0.18);
       animation: slideUp 0.9s ease forwards;
       width: 100%;
-      border-top: 4px solid #38bdf8;
+		border-top: 22px
     }
 
     h2 {
       font-family: 'Orbitron', sans-serif;
-      margin-bottom: 8px;
+      margin-bottom: 8px; /* reduced spacing */
       background: linear-gradient(90deg, #38bdf8, #a855f7);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -167,16 +167,16 @@
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+      gap: 20px; /* reduced gap */
+      margin-top: 20px; /* reduced spacing */
     }
 
     .member {
       background: #0b0b0b;
-      padding: 20px;
+      padding: 20px; /* reduced padding */
       border-radius: 20px;
       text-align: center;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
     }
 
     .member img {
@@ -184,8 +184,8 @@
       height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 0 30px rgba(168, 85, 247, 0.9);
-      margin-bottom: 12px;
+      box-shadow: 0 0 30px rgba(168,85,247,0.9);
+      margin-bottom: 12px; /* reduced spacing */
     }
 
     /* FEEDBACK FORM */
@@ -200,18 +200,18 @@
     #feedback-form form {
       margin-top: 20px;
       display: grid;
-      gap: 12px;
+      gap: 12px; /* reduced gap */
     }
 
     #feedback-form input,
     #feedback-form textarea,
     #feedback-form select {
-      padding: 10px;
+      padding: 10px; /* smaller padding */
       border-radius: 10px;
       background: #020617;
       color: #e5e7eb;
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      box-shadow: inset 0 0 10px rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56,189,248,0.35);
+      box-shadow: inset 0 0 10px rgba(56,189,248,0.15);
       transition: 0.3s;
     }
 
@@ -220,7 +220,7 @@
     #feedback-form select:focus {
       outline: none;
       border-color: #a855f7;
-      box-shadow: 0 0 15px rgba(168, 85, 247, 0.8);
+      box-shadow: 0 0 15px rgba(168,85,247,0.8);
     }
 
     #feedback-form button {
@@ -232,19 +232,19 @@
       background: linear-gradient(90deg, #38bdf8, #a855f7);
       color: white;
       cursor: pointer;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+      box-shadow: 0 0 20px rgba(56,189,248,0.7);
       transition: 0.3s;
     }
 
     #feedback-form button:hover {
       transform: scale(1.04);
-      box-shadow: 0 0 30px rgba(168, 85, 247, 0.95);
+      box-shadow: 0 0 30px rgba(168,85,247,0.95);
     }
 
     /* FOOTER */
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 15px; /* reduced padding */
       background: #020617;
       color: #9ca3af;
       font-size: 0.9rem;
@@ -260,11 +260,12 @@
       from { transform: scale(0.9); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
+
   </style>
 </head>
-
 <body>
 
+<!-- NAVIGATION HEADER -->
 <header>
   <nav>
     <h3>RoboMirrorX</h3>
@@ -278,32 +279,30 @@
   </nav>
 </header>
 
-<div class="spacer"></div>
+<div class="spacer"></div> <!-- empty div to offset fixed header -->
 
+<!-- HERO SECTION -->
 <section class="hero">
   <div class="container">
     <h1>RoboMirrorX</h1>
     <p><strong>Human-Centered Assistive Robotics Concept</strong></p>
-    <p>
-      RoboMirrorX is a conceptual assistive system designed to enhance human
-      capability through thoughtful engineering and empathetic design.
-    </p>
+    <p>RoboMirrorX is a conceptual assistive system designed to enhance human capability through thoughtful engineering and empathetic design. It prioritizes usability, comfort, and dignity.</p>
     <div class="image-row">
-      <img src="i23.png" alt="RoboMirrorX Image">
+      <img src="ae6f57fe-b2f3-4d28-a0ce-f50b7a6f3d25-removebg-preview.png">
+     
     </div>
   </div>
 </section>
 
+<!-- PROJECT OVERVIEW -->
 <section id="overview">
   <div class="container card">
     <h2>Project Overview</h2>
-    <p>
-      The RoboMirrorX project explores intelligent assistive mechanisms
-      replicating natural hand motion while remaining affordable and adaptable.
-    </p>
+    <p>The RoboMirrorX project explores intelligent assistive mechanisms replicating natural hand motion while remaining affordable and adaptable. Designed with modularity and future integration in mind.</p>
   </div>
 </section>
 
+<!-- COMPONENTS -->
 <section id="components">
   <div class="container card">
     <h2>Components</h2>
@@ -316,27 +315,26 @@
   </div>
 </section>
 
+<!-- FUTURE VISION -->
 <section id="future">
   <div class="container card">
     <h2>Future Vision</h2>
-    <p>
-      Future development includes neural and muscle-signal interfaces for
-      hands-free control, enabling adaptive learning and personalized assistance.
-    </p>
+    <p>Future development includes neural and muscle-signal interfaces for hands-free control, enabling adaptive learning and personalized assistance.</p>
   </div>
 </section>
 
+<!-- TEAM -->
 <section class="team" id="team">
   <div class="container">
     <h2>Project Team</h2>
     <div class="team-grid">
       <div class="member">
-        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328f7d0a" alt="Project Lead">
+        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328f7d0a">
         <h3>Project Lead</h3>
         <p>System planning and integration</p>
       </div>
       <div class="member">
-        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Hardware Engineer">
+        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12">
         <h3>Hardware Engineer</h3>
         <p>Mechanical and actuator design</p>
       </div>
@@ -344,11 +342,12 @@
   </div>
 </section>
 
+<!-- FEEDBACK FORM -->
 <section id="feedback-form">
   <div class="container card">
     <h2>Submit Your Feedback</h2>
     <p>This is a demonstration feedback form. Submitted data is not stored.</p>
-    <form onsubmit="event.preventDefault(); alert('Thank you! Feedback submitted.');">
+    <form onsubmit="event.preventDefault();alert('Thank you! Your feedback has been submitted for demonstration.');">
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Email Address" required>
       <select required>
@@ -363,6 +362,7 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 RoboMirrorX | Assistive Robotics Project</p>
 </footer>
